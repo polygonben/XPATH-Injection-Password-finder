@@ -58,5 +58,5 @@ name' or //*[starts-with(text(),'picoCTF{h0')] or 'x'='y&pass=test (SUCCESS)
     
     
     
-    basically you have to brute force each character and check if the new string exists in the data base (therefore will return true and add that character to the string now) or if it doesnt exist in the database it will return false and try the next character
+basically you have to brute force each character and check if the new string exists in the data base (therefore will return true and add that character to the string now) or if it doesnt exist in the database it will return false and try the next character
  
